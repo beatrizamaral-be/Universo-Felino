@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F7EFE5; /* Tom de bege claro do fundo do site */
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  width: 100%;
+  padding: 4px 40px; /* Ajustado para dar mais respiro nas laterais */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribui os 3 blocos nas pontas */
+  background-color: transparent; /* Fundo branco infinito de ponta a ponta */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03); /* Sombra sutil opcional */
+}
+
+/* 1. Área do Logo */
+.logo-img {
+  height: 90px; /* Altura ajustada para não esticar demais o cabeçalho */
+  width: auto;
+  display: block;
+}
+
+/* 2. Menu de Navegação (A moldura do Auto Layout) */
+.header-nav {
+  display: flex;
+  gap: 54px; /* Espaçamento entre os links */
+}
+
+/* Os Links Individuais (Correção do nome da classe) */
+.nav-link {
+  text-decoration: none;
+  color: #3D2314; /* Marrom escuro */
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 6px;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #A95C38; /* Terracota ao passar o mouse */
+}
+
+/* Linha laranja abaixo do link (Correção usando ::after) */
+.nav-link:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #A95C38;
+  border-radius: 2px;
+}
+
+/* 3. Frase Decorativa da Direita (Correção da linha cortada) */
+.decor-img {
+  height: 80px; /* Tamanho proporcional para a patinha da direita */
+  width: auto;
+  display: block;
+}
+
+.header-decor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.img-hero {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  
+}
