@@ -65,15 +65,39 @@ body {
   width: auto;
   display: block;
 }
-
 .header-decor {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
+.hero {
+  position: relative; /* Define que este elemento é a referência de posição */
+  width: 100%;
+  overflow: hidden;
+}
+
 .img-hero {
-  display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  
+  display: block; /* Remove espaços em branco indesejados abaixo da imagem */
+  position: relative;
+}
+.hero-texto{
+  position: absolute; /* Tira o texto do fluxo normal e sobrepõe à imagem */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Cria o efeito de transparência (Fundo preto com 50% de opacidade) */
+  display: flex; /* Alinhamento do conteúdo (Centralizado na vertical e horizontal) */
+  flex-direction: column;
+  justify-content:center; 
+  align-items: flex-start;
+  text-align: right;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.hero-title, .hero-subtitle, .hero-text {/* Cor do texto para contrastar com o fundo escuro transparente */
+  color: #ffffff; 
 }
