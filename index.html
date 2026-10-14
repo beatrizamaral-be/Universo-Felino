@@ -11,41 +11,46 @@
     <header class="header">
          <!-- 1. Logotipo (Esquerda) -->
         <div class="header-logo">
-            <img src="./img/Img-logo.png" class="logo-img">
-            </div>
+            <a href="#inicio" aria-label="Universo dos Gatos - início">
+                <img src="./img/img-logo.png" class="logo-img" alt="Universo dos Gatos">
+            </a>
+        </div>
 
            <!-- 2. Menu de navegação (Centro)-->
-            <nav class="header-nav"> 
-                <a href="#" class="nav-link">Inicio</a>
-                <a href="#" class="nav-link">Curiosidades</a>
-                <a href="#" class="nav-link">Comportamento</a>
-                <a href="#" class="nav-link">Raças</a>
-                <a href="#" class="nav-link">Saiba Mais</a>
+            <nav class="header-nav" aria-label="Navegação principal">
+                <a href="#inicio" class="nav-link">Início</a>
+                <a href="#curiosidades" class="nav-link">Curiosidades</a>
+                <a href="#comportamento" class="nav-link">Comportamento</a>
+                <a href="#racas" class="nav-link">Raças</a>
+                <a href="#saiba-mais" class="nav-link">Saiba mais</a>
             </nav>
 
 
         <!-- 3. Frase Decorativa (Direita) -->
         <div class="header-decor">
-        <img src="./img/Img-decor.png" class="decor-img">
-        <p class="decor-text"></p>
+            <img src="./img/img-decor.png" class="decor-img" alt="">
         </div>  
     </header>
 
+
  <!-- 2. Hero -->
   <div class="hero">
-    <img src="./img/Img-hero.png" class="img-hero">
+
+    <img src="./img/img-hero.png" class="img-hero" alt="">
     <!-- Caixa da Esquerda: Hero -->
     <div class="hero-texto">
-        <p class="hero-subtitle">Bem-vindo dos</p>
-        <h1 class="hero-title">Universo dos Gatos</h1>
+        <p class="hero-subtitle">Bem-vindo ao</p>
+        <h1 class="hero-title" id="hero-title">Universo dos Gatos</h1>
         <p class="hero-text">Descubra o fascinante mundo dos felinos e explore curiosidades, comportamento e raças de gatos.</p>
-        <button class="hero-button">Conheça Mais</button> 
+        <button class="hero-button" href="#curiosidades">Conheça mais</button>
     </div>
   </div>
 
-<!-- 4. Seção -->
-<div class="Seção1">
-    <h2>Por que os gatos são fascinantes?</h2>
+
+<!-- 4. Seção 1 - Por que os gatos são tão fascinantes? -->
+<main>
+<section class="gatos-fascinantes" aria-labelledby="titulo-fascinantes">
+    <h2 id="titulo-fascinantes">Por que os gatos são fascinantes?</h2>
     
     <p>Os gatos são animais domesticados que ainda preservam diversos comportamentos associados aos seus ancestrais, como explorar territórios, procurar locais seguros e perseguir pequenos movimentos.
     
@@ -56,82 +61,219 @@
     <p>Além das características físicas, cada gato possui uma personalidade própria. Idade, experiências, ambiente e socialização podem influenciar a forma como ele reage a pessoas, outros animais e diferentes situações.
     </p>
     
-    <p><strong>o contexto é tão importante quanto observar o comportamento.</strong></p>
-</div>
+    <p><strong>O contexto é tão importante quanto observar o comportamento.</strong></p>
+</section>
 
-<!-- 5. Seção 1 - Você Sabia (Cards) -->
-<div class="Seção2">
-    <h2>Você Sabia?</h2>
+
+<!-- 5. Seção 2 - Você Sabia (Cards) -->
+
+<div class= "Fundo-marrom">
+<div class="voce-sabia">
+    <h2>Você sabia?</h2>
+
+    <div class="container-cards">
 
     <!-- Card 1 -->
-    <div class="Card">
-        <h2>Dominhocos</h2>
+    <div class="card">
+        <h3>Horas de sono</h3>
         <p>Gatos passam muitas horas dormindo ou descansando. O sono ajuda na recuperação de energia e faz parte natural da rotina desses animais.</p>
     </div>
 
     <!-- Card 4 -->
-    <div class="Card">
-        <h2>Setidos Aguçados</h2>
+    <div class="card">
+        <h3>Sentidos aguçados</h3>
         <p>Os gatos possuem sentidos bastante desenvolvidos. A audição e estruturas sensoriais como os bigodes ajudam na percepção do ambiente.</p>
     </div>
 
     <!-- Card 3 -->
-    <div class="Card">
-        <h2> Amor por caixas</h2>
+    <div class="card">
+        <h3>Amor por caixas</h3>
         <p>Caixas podem funcionar como esconderijos e oferecer ao gato um espaço protegido para descansar ou observar o ambiente.</p>
     </div>
 
     <!-- Card 4 -->
-    <div class="Card">
-        <h2> Patinhas</h2>
+    <div class="card">
+        <h3>Patinhas</h3>
         <p>As patas são importantes para locomoção, exploração, brincadeiras e outras atividades do cotidiano.</p>
     </div>
 
     <!-- Card 5 -->
-    <div class="Card">
-        <h2> Ronronar</h2>
+    <div class="card">
+        <h3>Ronronar</h3>
         <p>O ronronar pode aparecer durante momentos de conforto, mas também em situações de tensão. Por isso, deve ser observado junto com outros sinais.
         </p>
     </div>
 
     <!-- Card 5 -->
-    <div class="Card">
-        <h2> Comunicação</h2>
+    <div class="card">
+        <h3>Comunicação</h3>
         <p>Gatos utilizam cauda, orelhas, olhos, postura corporal e vocalizações para se comunicar.
         </p>
     </div>
-    <p><strong>Antes de interpretar um comportamento, observe o conjunto de sinais e o contexto.
-    </strong></p>
-</div>
-
-<!-- 5. Seção Comportamento Curiosos(Lista Ordenado) -->
- <div class="Seção3">
-<h1> 5 Comportamentos Curiosidades</h1>
-<ol>
-<li>Amassar cobertores ou superfícies; (Amassar paozinho)</li>
-<li>Derrubar objetivos; </li>
-<li>Perseguir pequenos movimentos;</li>
-<li>Procurar lugares altos;</li>
-<li>Dormir em posições inesperadas;</li>
-</ol>
-</div>
-
-<!-- 6. Seção: Comparando Raças (Lista Ordenado) -->
-<div class="Seção3">
-    <h1> 5 Comportamentos Curiosidades</h1>
-    <ol>
-    <li>Amassar cobertores ou superfícies; (Amassar paozinho)</li>
-    <li>Derrubar objetivos; </li>
-    <li>Perseguir pequenos movimentos;</li>
-    <li>Procurar lugares altos;</li>
-    <li>Dormir em posições inesperadas;</li>
-    </ol>
+    
     </div>
+ </div>
+ </div>
+
+
+<!-- 6. Seção 3 - Características dos gatos -->
+ <div class="caracteristicas">
+    <h2 > 5 características dos gatos</h2>
+     <p>Algumas características dos gatos:</p>
+
+    <ul>
+        <li>São animais muito observadores;</li>
+        <li>Possuem excelente audição;</li>
+        <li>Utilizam a cauda na comunicação;</li>
+        <li>Gostam de explorar ambientes;</li>
+        <li>Possuem hábitos próprios de higiene;</li>
+        <li>Apresentam personalidades diferentes;</li>
+    </ul>
+   </div>
+
+</div>
+
+<!-- 7. Seção 4 - Como entender um gato? -->
+ <div class="entender-gato">
+
+    <h2>Como entender um gato?</h2>
+     <p>Observe os sinais corporais e considere sempre o contexto:</p>
+
+    <div class="container-card-entender-gato">
+
+    <!-- Card 1 -->
+    <div class="card-entender-gato">
+        <h3>Cauda levantada</h3>
+        <p>Uma cauda levantada pode aparecer quando o gato está confortável ou demonstrando uma postura amigável. O contexto deve sempre ser considerado.</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card-entender-gato">
+        <h3>Orelhas e bigodes</h3>
+        <p>A posição das orelhas e os movimentos dos bigodes ajudam a entender como o gato está reagindo ao ambiente.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card-entender-gato">
+        <h3>Ronronar</h3>
+        <p>O ronronar pode aparecer em momentos de conforto, mas também em situações de ansiedade ou desconforto.</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card-entender-gato">
+        <h3>Entrar em caixas</h3>
+        <p>Espaços pequenos podem proporcionar sensação de segurança e permitir que o gato observe o ambiente de um local protegido.</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card-entender-gato">
+        <h3>Orelhas para trás</h3>
+        <p>Orelhas voltadas para trás podem indicar medo, irritação ou desconforto, principalmente quando acompanhadas por outros sinais corporais.</p>
+    </div>
+
+    <p><strong>Antes de interpretar um comportamento, observe o conjunto de sinais e o contexto.</strong></p>
+
+</div>
+</div>
+
+
+
+<!-- 8. Seção 5: Comportamentos e curiosidades -->
+<section class="comportamentos-curiosos" aria-labelledby="titulo-comportamentos-curiosos">
+    <h2 id="titulo-comportamentos-curiosos">Comportamentos curiosos</h2>
+    <ol>
+        <li>Amassar cobertores ou superfícies (fazer "pãozinho");</li>
+        <li>Derrubar objetos;</li>
+        <li>Perseguir pequenos movimentos;</li>
+        <li>Procurar lugares altos;</li>
+        <li>Dormir em posições inesperadas;</li>
+    </ol>
+</section>
     
 
+<!-- 9. Seção 6: Comparando algumas raças -->
+    <section class="racas" id="racas" aria-labelledby="titulo-racas">
+     <h2 id="titulo-racas">Comparando algumas raças</h2>
+      <table>
+        <thead>
+            <tr>
+                <th scope="col">Raça</th>
+                <th scope="col">Origem</th>
+                <th scope="col">Pelagem</th>
+                <th scope="col">Características</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Persa</th>
+                <td>Irã</td>
+                <td>Longa</td>
+                <td>Calmos e dóceis</td>
+            </tr>
+            <tr>
+                <th scope="row">Siamês</th>
+                <td>Tailândia</td>
+                <td>Curta</td>
+                <td>Comunicativos, inteligentes e ativos</td>
+            </tr>
+            <tr>
+                <th scope="row">Maine Coon</th>
+                <td>Estados Unidos</td>
+                <td>Longa</td>
+                <td>Amigáveis, inteligentes e sociáveis</td>
+            </tr>
+            <tr>
+                <th scope="row">Sphynx</th>
+                <td>Canadá</td>
+                <td>Pouca pelagem</td>
+                <td>Carentes, energéticos e sociáveis</td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
 
 
+<!-- 10. Seção 7: Galeria Felina -->
 
-    
+<section class="galeria" id="galeria" aria-labelledby="titulo-galeria">
+    <h2 id="titulo-galeria">Galeria felina</h2>
+    <img src="./img/Galeria-1.jpg" alt="Gato na primeira foto da galeria">
+    <img src="./img/Galeria-2.jpg" alt="Gato na segunda foto da galeria">
+    <img src="./img/Galeria-3.jpg" alt="Gato na terceira foto da galeria">
+    <img src="./img/Galeria-4.jpg" alt="Gato na quarta foto da galeria">
+</section>
+
+<!-- 11. Seção 8: Quer aprender mais? -->
+<section class="saiba-mais" id="saiba-mais" aria-labelledby="titulo-saiba-mais">
+    <h2 id="titulo-saiba-mais">Quer aprender mais?</h2>
+    <p>Se você quiser aprofundar seus conhecimentos sobre comportamento, saúde e bem-estar felino, consulte fontes especializadas e confiáveis.</p>
+</section>
+
+<!-- 12. Seção 9:Formulário -->
+<section class="contato" aria-labelledby="titulo-contato">
+    <h2 id="titulo-contato">Conte para nós!</h2>
+    <p>Você também gosta de gatos? Compartilhe uma curiosidade, conte um comportamento que já observou ou fale sobre o que mais chama sua atenção no universo felino.</p>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" autocomplete="name" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<!-- 13. Rodapé -->
+</main>
+    <footer class="footer">
+        <p>© 2026 Universo dos Gatos. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Beatriz Amaral.</p>
+        <p>Feito com curiosidade e carinho pelos gatos. 🐾</p>
+    </footer>
+
 </body>
 </html>
