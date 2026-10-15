@@ -190,10 +190,10 @@ body {
   /* ==========================================================================
    4. SEÇÃO 2 - VOCÊ SABIA? (CARDS COM CSS GRID)
    ========================================================================== */
-  .Fundo-marrom {
+  .fundo-marrom{
   background-color: #f5e4d3;
   width: 100%;
-  padding: 60px 0;
+  padding: 60px 20px;
   margin: 60px 0;
   }
 
@@ -201,6 +201,10 @@ body {
   width: min(100%, 1280px);
   margin: 0 auto;
   padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 
 .voce-sabia h2 {
@@ -245,7 +249,7 @@ body {
 
 
  /* ==========================================================================
-   4. SEÇÃO 3 - CARACTERÍSTICAS DOS GATOS
+   4. SEÇÃO 3 -  5 CARACTERÍSTICAS DOS GATOS
    ========================================================================== */
   
   .caracteristicas h2{
@@ -257,27 +261,31 @@ body {
   font-size: 1.1rem;
   color: #61351b;
   line-height: 1.7;
-  margin: 16px 0px;
+  margin-left: 60px;
+  margin-bottom: 40px;
+  font-weight: 500;
 }
   
-   .caracteristicas{
-  max-width: 800px;      /* Limita a largura para o texto ficar confortável de ler */
-  margin: 60px auto;
-  padding: 60px;
+  .caracteristicas{
+  padding: 50px 40px;
   background-color: #fdfcfa; /* Mantém o fundo bege claro da seção */
- border-radius: 12px;       /* Bordas arredondadas suaves */
+  border-radius: 12px;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto 60px auto;
+  box-sizing: border-box;
+  margin-left: 150px;
 }
  
 .caracteristicas li {
-  color: #61351b;       /* Deixa o número na cor terracota */
-  font-size: 1.2rem;    /* Aumenta um pouquinho o tamanho do número */
+  color: #61351b;
+  padding: 8px;
+  margin-left: 60px;     
 }
-
-
 
 /* ==========================================================================
    5. SEÇÃO 4 - Como entender um gato?
-   =========================[================================================ */
+   ========================================================================= */
   .entender-gato h2 {
     font-size: 2.2rem;
     color: #61351b;
@@ -288,7 +296,7 @@ body {
   .entender-gato{
      width: 100%;
     max-width: 800px;      /* Limita a largura para o texto ficar confortável de ler */
-   margin: 60px auto; 
+    margin: 60px auto; 
     padding: 60px;
     box-sizing: border-box;
   }
@@ -300,7 +308,6 @@ body {
   width: 100%;
   flex-wrap: wrap;
   }
-
 
   .card-entender-gato {
   flex: 1 1 240px;
@@ -332,6 +339,10 @@ body {
   margin-bottom: 24px;
 }
 
+/* ==========================================================================
+   5. SEÇÃO 5 - Comportamentos curiosos
+   ========================================================================= */
+
 .comportamentos-curiosos,
 .racas,
 .galeria,
@@ -339,9 +350,10 @@ body {
 .contato {
   width: min(100% - 40px, 1120px);
   margin: 60px auto;
+  color: #3D2314;
 }
 
-.comportamentos-curiosos h2,]
+.comportamentos-curiosos h2,
 .racas h2,
 .galeria h2,
 .saiba-mais h2,
@@ -359,6 +371,10 @@ body {
   color: #6d5647;
   line-height: 1.8;
 }
+
+/* ==========================================================================
+   5. SEÇÃO 6 - Comparando algumas raças
+   ========================================================================= */
 
 .racas {
   overflow-x: auto;
@@ -383,6 +399,11 @@ body {
   color: #61351b;
 }
 
+/* ==========================================================================
+   5. SEÇÃO 7 - Galeria Felina
+   ========================================================================= */
+
+
 .galeria {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
@@ -400,6 +421,11 @@ body {
   object-fit: cover;
   border-radius: 12px;
 }
+
+/* ==========================================================================
+   5. SEÇÃO 8 - Formulário
+   ========================================================================= */
+
 
 .saiba-mais {
   padding: 40px;
@@ -456,6 +482,10 @@ body {
   background-color: #8C4A2B;
 }
 
+/* ==========================================================================
+   5. SEÇÃO 9 - Footer
+   ========================================================================= */
+
 .footer {
   padding: 28px 20px;
   background-color: #3D2314;
@@ -467,8 +497,8 @@ body {
   margin-top: 8px;
 }
 
-@media (max-width: 900px) {
-  .header {
+ (max-width: 900px) {
+  .header 
     flex-wrap: wrap;
     justify-content: center;
     gap: 12px 24px;
@@ -480,10 +510,9 @@ body {
     justify-content: center;
     gap: 16px 24px;
   }
-}
 
-@media (max-width: 600px) {
-  .header-decor {
+ (max-width: 600px) {
+  .header-decor 
     display: none;
   }
 
@@ -551,7 +580,6 @@ body {
   .racas table {
     min-width: 600px;
   }
-}
 
 @media (prefers-reduced-motion: reduce) {
   *,
